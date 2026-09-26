@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115776710-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115776710-1');
+    </script>
+    <script language="javascript">
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://vldb.org/2027/call-for-research-track" />
+    <style>
+        body {
+            visibility: hidden
+        }
+    </style>
+
+    <link rel="icon" type="image/png" href="https://vldb.org/2027/assets/img/favicon.webp">
+    <title>VLDB 2027 | Call for Contributions - Research Track</title>
+    <title>The VLDB 2027 conference, will take place in Athens, Greece, from Aug 23rd to Aug 27th, 2027, and will
+        feature research talks, tutorials, demonstrations, and workshops.
+        It will cover issues in data management, database and information systems research.
+        VLDB is a premier annual international forum for data management and database researchers, vendors,
+        practitioners, application developers, and users.
+    </title>
+</head>
+
+<body>
+    <header>
+        <div class="small-menu"><a class="hamburger"></a></div>
+        <div class="small-header">
+        <figure class="logo">
+            <a href="https://vldb.org/2027">
+                <img style="max-width: 150px; min-width: 100px;"
+                    src="assets/img/Logo_Synedriou_Final_Outline.jpg" alt="VLDB 2027 -- Athens, Greece"></a>
+        </figure>
+    </div>
+        <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <figure class="logo">
+                <img src="assets/img/Logo_Synedriou_Final_Outline.jpg" alt="VLDB 2027 -- Athens, Greece">
+                <img src="assets/img/Logo_Synedriou_Final_Outline.jpg" alt="VLDB 2027 -- Athens, Greece">
+            </figure>
+
+            <div>
+                General Information
+                <div class="menu">
+
+
+                    <a href="." itemprop="url">
+                        <span itemprop="name">Conference Overview</span>
+                    </a>
+
+
+
+                    <a href="officers.html" itemprop="url">
+                        <span itemprop="name">Conference Officers</span>
+                    </a>
+
+
+
+                    <a href="shadow-pc.html" itemprop="url">
+                        <span itemprop="name">Shadow PC</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Conference Program
+                <div class="menu">
+
+                </div>
+            </div>
+
+            <div>
+                Call for Contributions
+                <div class="menu">
+
+
+                    <a href="call-for-research-track.html" itemprop="url">
+                        <span itemprop="name">Research Track</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Dates &amp; Guidelines
+                <div class="menu">
+
+
+                    <a href="important-dates.html" itemprop="url">
+                        <span itemprop="name">Important Dates</span>
+                    </a>
+
+
+
+                    <hr />
+
+
+
+                    <a href="formatting-guidelines.html" itemprop="url">
+                        <span itemprop="name">Formatting Guidelines</span>
+                    </a>
+
+
+
+                    <a href="submission-guidelines.html" itemprop="url">
+                        <span itemprop="name">Submission Guidelines</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Sponsorship
+                <div class="menu">
+
+
+                    <a href="sponsorship.html" itemprop="url">
+                        <span itemprop="name">Opportunities</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Participant Information
+                <div class="menu">
+
+                </div>
+            </div>
+
+        </nav>
+        <section class="carousel small" data-images='[{"i":"img/athens/athens_vldb_1774709375.webp","t":"Athens"},{"i":"img/athens/athens_vldb_23.webp","t":"Athens"},{"i":"img/athens/athens_vldb_1846421599.webp","t":"Athens"}]'>
+            <span>53<sup>rd</sup> International Conference on Very Large Data Bases</span>
+            <span>Athens, Greece &mdash; Aug 23rd - Aug 27th, 2027</span>
+        </section>
+    </header>
+
+    <main class="body">
+        <div style="text-align: justify" class="markdown ">
+            <h1>VLDB 2027: Call for Contributions - Research Track</h1>
+            <h2>PVLDB Volume 20 — Contributions</h2>
+            <p><strong>New for PVLDB Volume 20</strong></p>
+            <ul>
+                <li>Updated Topics of Interest</li>
+                <li>Check <a href="submission-guidelines.html">Submission Guidelines</a> for
+                    updates on the expectation of submitting supplementary materials for transparency and
+                    reproducibility.</li>
+            </ul>
+
+            <h2>Overview</h2>
+            <p>The Proceedings of the VLDB (PVLDB), established in 2008, is a scholarly journal for short and timely
+                research papers pursuing a strict quality assurance process. PVLDB is distinguished by a monthly
+                submission process with rapid reviews. PVLDB issues are published regularly throughout the year. A paper
+                will appear in PVLDB soon after acceptance, and possibly in advance of the VLDB Conference. All papers
+                accepted for Volume 20 by July 1, 2027 will form the Research Track of the VLDB 2027 Conference,
+                together with any rollover papers from Volume 19. Papers accepted to Volume 20 after July 1, 2027 will
+                be rolled over to the VLDB 2028 Conference. At least one author of each accepted paper must attend the
+                VLDB 2027 Conference. PVLDB is the only submission channel for research papers to appear in the VLDB
+                2027 Conference. Please see the <a href="submission-guidelines.html">Submission
+                    Guidelines</a> for paper submission instructions. The submission process for other VLDB 2027 tracks,
+                such as demonstrations or tutorials, is different, and is described in their respective calls for
+                papers.</p>
+
+            <h2>Scope of PVLDB</h2>
+            <p>PVLDB welcomes original research papers on a broad range of research topics related to all aspects of
+                data management, where systems issues play a significant role, such as data management system technology
+                and information management infrastructures, including their very large scale of experimentation, novel
+                architectures, and demanding applications as well as their underpinning theory. The scope of a
+                submission for PVLDB is also <strong>described by the subject areas given below</strong>. Moreover, the scope of PVLDB is
+                <strong>restricted to scientific areas that are covered by the combined expertise on the submission's topic of
+                the journal's editorial board</strong>. Finally, the contributions in the submission should build on work already
+                published in data management outlets, e.g., PVLDB, VLDB Journal, ACM SIGMOD, IEEE ICDE, EDBT, ACM TODS,
+                IEEE TKDE, and go beyond a syntactic citation.</p>
+
+            <h2>Four Paper Categories</h2>
+            <p>There are four equally important categories of papers in the research track:</p>
+            <ul>
+                <li>Regular Research Papers</li>
+                <li>Experiment, Analysis & Benchmark Papers (EA&B)</li>
+                <li>Scalable Data Science Papers (SDS)</li>
+                <li>Vision Papers</li>
+            </ul>
+            <p>See <a href="submission-guidelines.html">Submission Guidelines</a> for page limits
+                for these categories.</p>
+
+            <h3>Regular Research Papers</h3>
+            <p>PVLDB invites regular research papers of original work with different flavors, which are reviewed with
+                different expectations on novelty and coverage of the experimental evaluation:</p>
+            <ul>
+                <li><strong>Foundations and Algorithms Papers:</strong> The primary contribution of foundations and
+                    algorithms papers lies in their formal underpinnings or novel algorithms expressed through
+                    theoretical formalism and/or precise pseudocode. In contrast to pure theory venues, authors of such
+                    papers are still encouraged to include a prototype implementation and experimental evaluation even
+                    though the core contribution is conceptual and algorithmic in nature.</li>
+                <li><strong>Systems Papers:</strong> The primary contribution of systems papers lies in the development
+                    of novel and practical approaches. These papers typically have no theoretical formalism or proofs,
+                    but include a principled system design, a solid prototype implementation, and empirical evaluation
+                    of a working end-to-end system. The novelty of these papers often lies in the design, innovative
+                    system architecture, new abstractions, or interesting and effective combination of existing
+                    techniques.</li>
+            </ul>
+
+            <h3>Experiment, Analysis & Benchmark (EA&B) Papers</h3>
+            <p>EA&B papers focus on the extensive evaluation of algorithms, data structures, and systems that are of
+                wide interest. The scientific contribution of an EA&B paper lies in providing: (i) fundamentally new
+                insights into the strengths and weaknesses of existing methods, (ii) new ways to evaluate existing
+                methods and systems, or (iii) characterization of workloads in real-world deployments. We solicit EA&B
+                papers of the following flavors:</p>
+            <ul>
+                <li><strong>Experimental Survey Papers:</strong> Experimental surveys compare multiple existing
+                    solutions (including open-source solutions) to a problem and, through extensive experiments, provide
+                    a new comprehensive perspective on their strengths and weaknesses. The core contribution of such
+                    experimental surveys lies in the gathered insights as well as reusable artifacts which allows for
+                    reproducibility.</li>
+                <li><strong>Workload Characterization Papers:</strong> Since workload characteristics largely influence
+                    the design and implementation of new algorithms and systems, such workload characterization papers
+                    describe new benchmarks, real-world workload characteristics and phenomena, the working of existing
+                    methods and systems under such workloads, or other empirical studies. The core contribution of such
+                    papers are often insights into workloads and reusable artifacts such as benchmark suites or traces.
+                </li>
+            </ul>
+
+            <h3>Scalable Data Science (SDS) Papers</h3>
+            <p>SDS papers bridge the gap between the Regular Research papers and the Industrial Track papers, especially
+                for the fast evolving area of data science, data engineering, and applied machine learning. We solicit
+                papers describing the design, implementation, or deployment of systems in the real world, with a special
+                focus on different dimensions of scalability, such as data size, number of sources and models, number of
+                concurrent users and requests, or degree of parallelism. We solicit SDS papers of the following flavors:
+            </p>
+            <ul>
+                <li><strong>Papers about Deployed Solutions</strong> describe the implementation of a system that solves
+                    a substantial real-world problem and is (or was) in use for an extended period of time in industry,
+                    science, medicine, education, government, non-profit organizations, or as open source. The paper
+                    should present the problem, its significance to the application domain, the design choices for the
+                    solution, the implementation challenges, and the lessons learned from successes and failures,
+                    including post-launch performance analysis.</li>
+                <li><strong>Papers about Enabling Infrastructure</strong> for deployment of applied machine learning
+                    also fall into the SDS category. An example may be an open-source, general-purpose entity linkage
+                    tool that takes data from a large number of data sources and links records that refer to the same
+                    real-world entity. Another example is a low-latency system for monitoring online model predictions
+                    on streaming data at scale to detect concept drift and recommend how to react.</li>
+            </ul>
+
+            <h3>Vision Papers</h3>
+            <p>Vision papers describe novel system architectures, directions, or systems that show great promise for
+                high impact in the future. To this end, vision papers go beyond the typical scope of a research paper,
+                and describe a convincing motivation and new ideas for principled technology. Such vision papers are
+                evaluated based on the novelty of the ideas and preliminary results instead of a full prototype and
+                experimental evaluation.</p>
+
+            <h2>Topics of Interest</h2>
+            <p>PVLDB welcomes original research papers on a broad range of topics related to all aspects of data
+                management. The themes and topics listed below are intended to serve primarily as indicators of the
+                kinds of data-centric subjects that are of interest to PVLDB – they do not represent an exhaustive list.
+            </p>
+
+            <div style="column-count: 2;">
+                <h4>Data Management for ML/AI</h4>
+                <ul>
+                    <li>Compilation and optimization in ML systems</li>
+                    <li>Data engineering and model management for ML</li>
+                    <li>Embeddings and vector databases</li>
+                    <li>New data system infrastructures and tools for applied ML</li>
+                    <li>Runtime strategies and data access in ML systems</li>
+                </ul>
+
+                <h4>Data Mining and Analytics</h4>
+                <ul>
+                    <li>Data mining algorithms for various data types</li>
+                    <li>Data stream mining</li>
+                    <li>Data warehousing and OLAP</li>
+                    <li>Parallel and distributed data mining</li>
+                </ul>
+
+                <h4>Data Privacy and Security</h4>
+                <ul>
+                    <li>Access control and privacy</li>
+                    <li>Blockchain</li>
+                    <li>Privacy-enhancing technologies</li>
+                </ul>
+
+                <h4>Database Performance and Manageability</h4>
+                <ul>
+                    <li>Administration and manageability</li>
+                    <li>Tuning, benchmarking, and performance measurement</li>
+                </ul>
+
+                <h4>DBMS Internals</h4>
+                <ul>
+                    <li>Access methods</li>
+                    <li>Concurrency control, recovery, and transactions</li>
+                    <li>Memory and storage management</li>
+                    <li>Multi-core processing and hardware acceleration</li>
+                    <li>Query processing and optimization</li>
+                    <li>Views, indexing, and search</li>
+                </ul>
+
+                <h4>Distributed Database Systems</h4>
+                <ul>
+                    <li>Cloud data management, resource management, database as a service</li>
+                    <li>Data networking and content delivery</li>
+                    <li>Distributed analytics</li>
+                    <li>Distributed transactions</li>
+                    <li>Key-value databases</li>
+                </ul>
+
+                <h4>Graph Data Management</h4>
+                <ul>
+                    <li>Graph data models, schemas, and query languages</li>
+                    <li>Graph database systems (storage, indexing, query optimization, etc.)</li>
+                    <li>Graph schemas and interoperability</li>
+                    <li>Knowledge graphs and knowledge management</li>
+                    <li>Web data management and Semantic Web</li>
+                </ul>
+
+                <h4>Information Integration</h4>
+                <ul>
+                    <li>Data cleaning, data quality, and data preparation</li>
+                    <li>Data discovery and search</li>
+                    <li>Data lakes and data governance</li>
+                    <li>Heterogeneous and federated DBMS</li>
+                    <li>Metadata management</li>
+                    <li>Schema matching and mapping</li>
+                </ul>
+
+                <h4>ML/AI for Data Management</h4>
+                <ul>
+                    <li>Learned algorithms for sorting, compressing, encoding data</li>
+                    <li>Learned index structures and storage layouts</li>
+                    <li>Learned query processing and optimization</li>
+                    <li>LLM-assisted data processing</li>
+                    <li>Self-tuning and instance-optimized database systems</li>
+                </ul>
+
+                <h4>Network Data</h4>
+                <ul>
+                    <li>Graph algorithms for large-scale analysis</li>
+                    <li>Graph mining and pattern discovery</li>
+                    <li>Graph-based inference and application analytics</li>
+                    <li>Network data analysis (social networks, road networks, hypergraphs, etc.)</li>
+                </ul>
+
+                <h4>Novel Database Architectures</h4>
+                <ul>
+                    <li>Data management on novel hardware</li>
+                    <li>Embedded and mobile databases</li>
+                    <li>Energy-efficient and sustainable data systems</li>
+                    <li>Video management and analytics systems</li>
+                </ul>
+
+                <h4>Provenance and Workflows</h4>
+                <ul>
+                    <li>Debugging and explainable AI</li>
+                    <li>Process mining</li>
+                    <li>Profile-based and context-aware data management</li>
+                    <li>Provenance management and analysis</li>
+                </ul>
+
+                <h4>Schema and Languages</h4>
+                <ul>
+                    <li>Data models and query languages</li>
+                    <li>Schema management and design</li>
+                </ul>
+
+                <h4>Specialized and Domain-Specific Data Management</h4>
+                <ul>
+                    <li>Crowdsourcing</li>
+                    <li>Fuzzy, probabilistic, and approximate data</li>
+                    <li>Image and multimedia databases</li>
+                    <li>Quantum data management</li>
+                    <li>Responsible data management</li>
+                    <li>Scientific and medical data management</li>
+                    <li>Spatial and temporal databases</li>
+                </ul>
+
+                <h4>Text and Semi-Structured Data</h4>
+                <ul>
+                    <li>Data extraction and processing</li>
+                    <li>Information retrieval</li>
+                    <li>Text in databases</li>
+                </ul>
+
+                <h4>Time Series Data</h4>
+                <ul>
+                    <li>Real-time databases, sensors and IoT, stream databases</li>
+                    <li>Time series analytics (forecasting, anomaly detection, imputation, classification, clustering,
+                        similarity search, etc.)</li>
+                    <li>Time series data management and systems</li>
+                </ul>
+
+                <h4>User Interfaces</h4>
+                <ul>
+                    <li>Data exploration</li>
+                    <li>Database support for visual analytics</li>
+                    <li>Database usability</li>
+                    <li>Interactive querying and visualization for large data</li>
+                    <li>NL interfaces to data</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="spinner"></div>
+    </main>
+
+    <footer>
+        <div>53<sup>rd</sup> International Conference on Very Large Data Bases<br />Athens, Greece &mdash; Aug 23rd -
+            Aug 27th, 2027</div>
+    </footer>
+
+    <link rel="stylesheet" href="https://vldb.org/2027/assets/merged.css">
+    <script async src="https://vldb.org/2027/assets/merged.js"></script>
+
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+    <script>
+        (function () {
+            var last = 0,
+                docBody = document.body,
+                header = document.querySelector('body>header'),
+                nav = header && header.querySelector('nav'),
+                requestAnimationFrame = window.requestAnimationFrame || function (callback, element) {
+                    var now = Date.now(),
+                        next = Math.max(0, 16 - (now - last)),
+                        id = window.setTimeout(function () {
+                            callback(now + next);
+                        }, next);
+                    last = now + next;
+                    return id;
+                },
+                cancelAnimationFrame = window.cancelAnimationFrame || function (id) {
+                    clearTimeout(id);
+                },
+                update = function () {
+                    if (!nav) return;
+
+                    var isStatic = docBody.classList.contains('static');
+                    if (header.getBoundingClientRect().bottom > 70) {
+                        if (isStatic) docBody.classList.remove('static');
+                    } else if (!isStatic) docBody.classList.add('static');
+                },
+                lid;
+
+            window.addEventListener('scroll', function (e) {
+                if (lid) cancelAnimationFrame(lid);
+                lid = requestAnimationFrame(update);
+            });
+
+            update();
+        }());
+    </script>
+</body>
+
+</html>

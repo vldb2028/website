@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115776710-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115776710-1');
+    </script>
+    <script language="javascript">
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://vldb.org/2027/shadow-pc" />
+    <style>
+        body {
+            visibility: hidden
+        }
+    </style>
+
+    <link rel="icon" type="image/png" href="https://vldb.org/2027/assets/img/favicon.webp">
+    <title>VLDB 2027 | VLDB 2027 Shadow PC</title>
+    <title>The VLDB 2027 conference, will take place in Athens, Greece, from Aug 23rd to Aug 27th, 2027, and will
+        feature research talks, tutorials, demonstrations, and workshops.
+        It will cover issues in data management, database and information systems research.
+        VLDB is a premier annual international forum for data management and database researchers, vendors,
+        practitioners, application developers, and users.
+    </title>
+</head>
+
+<body>
+    <header>
+        <div class="small-menu"><a class="hamburger"></a></div>
+        <div class="small-header">
+        <figure class="logo">
+            <a href="https://vldb.org/2027">
+                <img style="max-width: 150px; min-width: 100px;"
+                    src="assets/img/Logo_Synedriou_Final_Outline.jpg" alt="VLDB 2027 -- Athens, Greece"></a>
+        </figure>
+    </div>
+        <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <figure class="logo">
+                <img src="assets/img/Logo_Synedriou_Final_Outline.jpg" alt="VLDB 2027 -- Athens, Greece">
+                <img src="assets/img/Logo_Synedriou_Final_Outline.jpg" alt="VLDB 2027 -- Athens, Greece">
+            </figure>
+
+            <div>
+                General Information
+                <div class="menu">
+
+
+                    <a href="." itemprop="url">
+                        <span itemprop="name">Conference Overview</span>
+                    </a>
+
+
+
+                    <a href="officers.html" itemprop="url">
+                        <span itemprop="name">Conference Officers</span>
+                    </a>
+
+
+
+                    <a href="shadow-pc.html" itemprop="url">
+                        <span itemprop="name">Shadow PC</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Conference Program
+                <div class="menu">
+
+                </div>
+            </div>
+
+            <div>
+                Call for Contributions
+                <div class="menu">
+
+
+                    <a href="call-for-research-track.html" itemprop="url">
+                        <span itemprop="name">Research Track</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Dates &amp; Guidelines
+                <div class="menu">
+
+
+                    <a href="important-dates.html" itemprop="url">
+                        <span itemprop="name">Important Dates</span>
+                    </a>
+
+
+
+                    <hr />
+
+
+
+                    <a href="formatting-guidelines.html" itemprop="url">
+                        <span itemprop="name">Formatting Guidelines</span>
+                    </a>
+
+
+
+                    <a href="submission-guidelines.html" itemprop="url">
+                        <span itemprop="name">Submission Guidelines</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Sponsorship
+                <div class="menu">
+
+
+                    <a href="sponsorship.html" itemprop="url">
+                        <span itemprop="name">Opportunities</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Participant Information
+                <div class="menu">
+
+                </div>
+            </div>
+
+        </nav>
+        <section class="carousel small" data-images='[{"i":"img/athens/athens_vldb_updated_7.webp","t":"Athens"},{"i":"img/athens/athens_vldb_2599312245.webp","t":"Athens"},{"i":"img/athens/athens_vldb_26.webp","t":"Athens"}]'>
+            <span>53<sup>rd</sup> International Conference on Very Large Data Bases</span>
+            <span>Athens, Greece &mdash; Aug 23rd - Aug 27th, 2027</span>
+        </section>
+    </header>
+
+    <main class="body">
+        <div style="text-align: justify" class="markdown ">
+            <p><strong>Call for VLDB 2027 Shadow PC participation</strong></p>
+            <p>We are running the second iteration of Shadow PC with VLDB, which will follow the reviewing cycles of
+                VLDB 2027 (Vol 20) submissions.</p>
+
+            <h3>Quick info:</h3>
+            <ul>
+                <li><strong>Application form:</strong> <a
+                        href="https://forms.office.com/e/v1ZmNaPvrn">https://forms.office.com/e/v1ZmNaPvrn</a></li>
+                <li><strong>Deadline to apply:</strong> April 8th, 2026 (AoE)</li>
+                <li><strong>For questions, reach out at:</strong> <a
+                        href="mailto:vldb2027_shadowpc_chairs@o365team.itu.dk">vldb2027_shadowpc_chairs@o365team.itu.dk</a>
+                </li>
+            </ul>
+
+            <h2>What is Shadow PC?</h2>
+            <p>Following the VLDB Shadow PC 2026, we are organising a shadow program committee for the VLDB 2027
+                conference.
+                The goal of Shadow PC is to give reviewing experience on real submissions to a top data management
+                conference to the new members of the data management community.
+                Shadow PC members will be able to see and review the submitted VLDB papers if the authors of those
+                papers opt in to be part of the Shadow PC paper pool at submission time.</p>
+            <p>Shadow PC reviews will have no effect on the decisions of the VLDB PC and the regular VLDB PC reviews /
+                comments will remain invisible to the Shadow PC.
+                The reviews written by the Shadow PC will only be visible to the shadow PC members and may eventually be
+                visible to the authors.</p>
+            <p>The VLDB conflict-of-interest rules will apply to shadow PC as well, and Shadow PC members will be
+                required to comply with ethical code of conduct.</p>
+
+            <h2>Why join a Shadow PC?</h2>
+            <p>The VLDB Shadow PC is a great opportunity for those who are new to the data management community (from
+                junior researchers to senior ones who may have started working across communities) to gain experience
+                with the review and program committee process.</p>
+            <p>Besides the recognition of being selected to Shadow PC, serving in VLDB Shadow PC is worthwhile for
+                several reasons:</p>
+            <ul>
+                <li>Getting to know how an academic PC operates in the data management community;</li>
+                <li>Seeing how other Shadow PC member judge the same papers that you review;</li>
+                <li>Getting to see a variety of papers at the submission stage;</li>
+                <li>Discovering what it takes to publish a paper in a top data management venue such as VLDB;</li>
+                <li>Getting to know other researchers who are also selected to the Shadow PC.</li>
+            </ul>
+
+            <h2>How does the Shadow PC work?</h2>
+            <p>Shadow PC members must commit themselves to writing their own detailed and rigorous reviews for papers
+                assigned to them by the allotted deadlines.
+                This timely review commitment is essential to the good functioning of the Shadow PC.
+                Candidates who might be unable to fulfil their reviewing duties should refrain from applying.
+                The Shadow PC members who miss more than 2 reviews will be eliminated from the Shadow PC over time.</p>
+            <p>To keep the load feasible, the Shadow PC will review one paper submitted to VLDB every other month
+                starting from June.
+                The paper pools and review timelines will mimic the VLDB 2027 review cycles and timelines, and we will
+                be using CMT as the reviewing platform like VLDB.</p>
+            <p>The Shadow PC will receive feedback on their reviews by the Shadow PC chairs and have a chance to learn
+                from the reviews of other Shadow PC members.</p>
+            <p>The authors of submitted papers can opt in or out of Shadow PC at submission time.</p>
+
+            <p><strong>Here is the more detailed timeline:</strong></p>
+            <ul>
+                <li><strong>April 8, 2026:</strong> Call for Shadow PC deadline</li>
+                <li><strong>Mid-to-late April, 2026:</strong> Finalize Shadow PC</li>
+                <li><strong>May 2026:</strong> Online intro meeting with PC</li>
+                <li><strong>July 2026:</strong> Online feedback meeting after first round</li>
+                <li><strong>September 2026:</strong> An in-person session during VLDB 2026 on Shadow PC - feedback &
+                    lessons-learned so far</li>
+                <li><strong>May 2027:</strong> Final feedback meeting, online</li>
+                <li><strong>August/September 2027:</strong> In-person session at VLDB 2027 with Shadow PC 2027 and
+                    Shadow PC 2028</li>
+            </ul>
+
+            <p><strong>Information & timeline for reviewing months:</strong></p>
+            <ul>
+                <li><strong>Review months:</strong> June 2026, August 2026, October 2026, December 2026, February 2027,
+                    and April 2027</li>
+                <li>Paper assignments by the 1st of the month from the previous two months’ VLDB paper submissions</li>
+                <li>Reviews due by 28th of the month</li>
+                <li>The review feedback phase and online discussions to reach the final decision
+                    (accept/revision/reject) for the paper till the 13th of the following month</li>
+            </ul>
+
+            <h2>How to become a Shadow PC member?</h2>
+            <p>Our target audience are the people who are involved in the data management community through their
+                research and wish to get some reviewing experience in this community but haven't had a data management
+                conference reviewing experience yet.
+                Therefore, we are looking for candidates that (1) have already published at a data management venue or
+                an affiliated workshop and (2) haven't yet served in the program committee of any data management venue.
+                You will need to submit your application at <a
+                    href="https://forms.office.com/e/v1ZmNaPvrn">https://forms.office.com/e/v1ZmNaPvrn</a> by April 8th,
+                2026 (AoE).
+                The required information for the application can be found on the form.</p>
+
+            <h2>Contact</h2>
+            <p>For any further information, please contact the shadow PC chairs: <a
+                    href="mailto:vldb2027_shadowpc_chairs@o365team.itu.dk">vldb2027_shadowpc_chairs@o365team.itu.dk</a>.
+            </p>
+            <ul>
+                <li><strong>Pınar Tözün</strong> (IT University of Copenhagen, Denmark)</li>
+                <li><strong>Primal Pappachan</strong> (Portland State University, United States)</li>
+                <li><strong>Tianzheng Wang</strong> (Simon Fraser University, Canada)</li>
+                <li><strong>Zsolt István</strong> (Technical University of Darmstadt, Germany)</li>
+            </ul>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div>53<sup>rd</sup> International Conference on Very Large Data Bases<br />Athens, Greece &mdash; Aug 23rd -
+            Aug 27th, 2027</div>
+    </footer>
+
+    <link rel="stylesheet" href="https://vldb.org/2027/assets/merged.css">
+    <script async src="https://vldb.org/2027/assets/merged.js"></script>
+
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+    <script>
+        (function () {
+            var last = 0,
+                docBody = document.body,
+                header = document.querySelector('body>header'),
+                nav = header && header.querySelector('nav'),
+                requestAnimationFrame = window.requestAnimationFrame || function (callback, element) {
+                    var now = Date.now(),
+                        next = Math.max(0, 16 - (now - last)),
+                        id = window.setTimeout(function () {
+                            callback(now + next);
+                        }, next);
+                    last = now + next;
+                    return id;
+                },
+                cancelAnimationFrame = window.cancelAnimationFrame || function (id) {
+                    clearTimeout(id);
+                },
+                update = function () {
+                    if (!nav) return;
+
+                    var isStatic = docBody.classList.contains('static');
+                    if (header.getBoundingClientRect().bottom > 70) {
+                        if (isStatic) docBody.classList.remove('static');
+                    } else if (!isStatic) docBody.classList.add('static');
+                },
+                lid;
+
+            window.addEventListener('scroll', function (e) {
+                if (lid) cancelAnimationFrame(lid);
+                lid = requestAnimationFrame(update);
+            });
+
+            update();
+        }());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115776710-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115776710-1');
+    </script>
+    <script language="javascript">
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://vldb.org/2027/formatting-guidelines" />
+    <style>
+        body {
+            visibility: hidden
+        }
+    </style>
+
+    <link rel="icon" type="image/png" href="https://vldb.org/2027/assets/img/favicon.webp">
+    <title>VLDB 2027 | Formatting Guidelines</title>
+    <title>The VLDB 2027 conference, will take place in Athens, Greece, from Aug 23rd to Aug 27th, 2027, and will
+        feature research talks, tutorials, demonstrations, and workshops.
+        It will cover issues in data management, database and information systems research.
+        VLDB is a premier annual international forum for data management and database researchers, vendors,
+        practitioners, application developers, and users.
+    </title>
+</head>
+
+<body>
+    <header>
+        <div class="small-menu"><a class="hamburger"></a></div>
+        <div class="small-header">
+            <figure class="logo">
+                <a href="https://vldb.org/2027">
+                    <img style="max-width: 150px; min-width: 100px;" src="assets/img/Logo_Synedriou_Final_Outline.jpg"
+                        alt="VLDB 2027 -- Athens, Greece"></a>
+            </figure>
+        </div>
+        <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <figure class="logo">
+                <img src="assets/img/Logo_Synedriou_Final_Outline.jpg" alt="VLDB 2027 -- Athens, Greece">
+                <img src="assets/img/Logo_Synedriou_Final_Outline.jpg" alt="VLDB 2027 -- Athens, Greece">
+            </figure>
+
+            <div>
+                General Information
+                <div class="menu">
+
+
+                    <a href="." itemprop="url">
+                        <span itemprop="name">Conference Overview</span>
+                    </a>
+
+
+
+                    <a href="officers.html" itemprop="url">
+                        <span itemprop="name">Conference Officers</span>
+                    </a>
+
+
+
+                    <a href="shadow-pc.html" itemprop="url">
+                        <span itemprop="name">Shadow PC</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Conference Program
+                <div class="menu">
+
+                </div>
+            </div>
+
+            <div>
+                Call for Contributions
+                <div class="menu">
+
+
+                    <a href="call-for-research-track.html" itemprop="url">
+                        <span itemprop="name">Research Track</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Dates &amp; Guidelines
+                <div class="menu">
+
+
+                    <a href="important-dates.html" itemprop="url">
+                        <span itemprop="name">Important Dates</span>
+                    </a>
+
+
+
+                    <hr />
+
+
+
+                    <a href="formatting-guidelines.html" itemprop="url">
+                        <span itemprop="name">Formatting Guidelines</span>
+                    </a>
+
+
+
+                    <a href="submission-guidelines.html" itemprop="url">
+                        <span itemprop="name">Submission Guidelines</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Sponsorship
+                <div class="menu">
+
+
+                    <a href="sponsorship.html" itemprop="url">
+                        <span itemprop="name">Opportunities</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div>
+                Participant Information
+                <div class="menu">
+
+                </div>
+            </div>
+
+        </nav>
+        <section class="carousel small"
+            data-images='[{"i":"img/athens/athens_vldb_1620869680.webp","t":"Athens"},{"i":"img/athens/athens_vldb_2709785767.webp","t":"Athens"},{"i":"img/athens/athens_vldb_updated_5.webp","t":"Athens"}]'>
+            <span>53<sup>rd</sup> International Conference on Very Large Data Bases</span>
+            <span>Athens, Greece &mdash; Aug 23rd - Aug 27th, 2027</span>
+        </section>
+    </header>
+
+    <main class="body">
+
+        <section class="formatting-guidelines">
+            <div style="text-align: justify" class="markdown ">
+                <h1>VLDB 2027: Formatting Guidelines</h1>
+                <h2>General Information</h2>
+                <p>All papers submitted to PVLDB and the VLDB Conference for review, irrespective of track, must adhere
+                    strictly to the PVLDB template detailed here. Any deviation (incl. omissions of mandatory blocks,
+                    such as copyright, reference format, artifact, etc.) will be liable to desk rejection of the paper.
+                    The PVLDB style template is based on the ACM style template and is updated regularly. Here is the
+                    current PVLDB template (for Latex and Word), including the style file and a sample file, as a zip
+                    file and as an overleaf project (for Latex):</p>
+                <ul>
+                    <li><a href="https://github.com/cwida/pvldbstyle/archive/master.zip">PVLDB style template zip</a>
+                    </li>
+                    <li><a
+                            href="https://www.overleaf.com/latex/templates/template-for-proceedings-of-the-vldb-endowment/krfrpvrbbvfj">PVLDB
+                            style template Overleaf</a></li>
+                    <li><a href="https://vldb.org/pvldb/wp-content/uploads/2020/PVLDBvol14Sample.docx">PVLDB style MS
+                            Word template</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="spinner"></div>
+    </main>
+
+    <footer>
+        <div>53<sup>rd</sup> International Conference on Very Large Data Bases<br />Athens, Greece &mdash; Aug 23rd -
+            Aug 27th, 2027</div>
+    </footer>
+
+    <link rel="stylesheet" href="https://vldb.org/2027/assets/merged.css">
+    <script async src="https://vldb.org/2027/assets/merged.js"></script>
+
+    <script async src="https://platform.twitter.com/widgets.js"></script>
+    <script>
+        (function () {
+            var last = 0,
+                docBody = document.body,
+                header = document.querySelector('body>header'),
+                nav = header && header.querySelector('nav'),
+                requestAnimationFrame = window.requestAnimationFrame || function (callback, element) {
+                    var now = Date.now(),
+                        next = Math.max(0, 16 - (now - last)),
+                        id = window.setTimeout(function () {
+                            callback(now + next);
+                        }, next);
+                    last = now + next;
+                    return id;
+                },
+                cancelAnimationFrame = window.cancelAnimationFrame || function (id) {
+                    clearTimeout(id);
+                },
+                update = function () {
+                    if (!nav) return;
+
+                    var isStatic = docBody.classList.contains('static');
+                    if (header.getBoundingClientRect().bottom > 70) {
+                        if (isStatic) docBody.classList.remove('static');
+                    } else if (!isStatic) docBody.classList.add('static');
+                },
+                lid;
+
+            window.addEventListener('scroll', function (e) {
+                if (lid) cancelAnimationFrame(lid);
+                lid = requestAnimationFrame(update);
+            });
+
+            update();
+        }());
+    </script>
+</body>
+
+</html>
