@@ -1,0 +1,61 @@
+/* VLDB 2028 - reglages propres a l'edition 2028 (charge en plus de merged.css) */
+
+/* ---- Logo dans la barre de menu ----
+   Le logo reste dans la barre, toujours le meme, et suit simplement la hauteur de la barre.
+   Les trois hauteurs ci-dessous correspondent aux trois hauteurs de la barre (120, 70 et 50 px). */
+
+body header>nav>.logo img:first-child,
+body header>nav>.logo img:last-child {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 114px;              /* barre de 120 px : haut de page, grand ecran */
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    max-height: none;
+    transition: opacity .3s, height .3s;
+}
+
+body.static header>nav>.logo img:first-child,
+body.static header>nav>.logo img:last-child {
+    height: 64px;               /* barre de 70 px : page defilee */
+}
+
+@media screen and (max-width: 1320px) {
+    body header>nav>.logo img:first-child,
+    body header>nav>.logo img:last-child,
+    body.static header>nav>.logo img:first-child,
+    body.static header>nav>.logo img:last-child {
+        height: 46px;           /* barre de 50 px : ecrans plus etroits */
+    }
+}
+
+/* Logo du menu mobile */
+body .small-header .logo img {
+    height: 44px;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    max-height: none;
+}
+
+/* ---- Page d'accueil : bandeau "54th International Conference..." ----
+   Sur l'accueil l'image est plus haute que sur les autres pages. On ancre le bandeau
+   en bas de l'image (comme sur les autres pages) au lieu de le laisser a 200 px du haut. */
+header .carousel.hero>span { top: auto; bottom: 70px; }
+header .carousel.hero>span+span { top: auto; bottom: 30px; }
+
+@media screen and (max-width: 1180px) {
+    header .carousel.hero>span { bottom: 58px; }
+    header .carousel.hero>span+span { bottom: 30px; }
+}
+@media screen and (max-width: 780px) {
+    header .carousel.hero>span { bottom: 50px; }
+    header .carousel.hero>span+span { bottom: 32px; }
+}
+@media screen and (max-width: 370px) {
+    header .carousel.hero>span { bottom: 47px; }
+    header .carousel.hero>span+span { bottom: 32px; }
+}
