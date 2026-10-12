@@ -1,5 +1,5 @@
 /**
- * Hero-only carousel: three random images from img/athens/, rotate every few seconds.
+ * Hero-only carousel: three images from img/morocco/, rotate every few seconds.
  * Expects merged.js to target a separate hidden .carousel[data-images] decoy on index.html.
  */
 (function (doc) {
@@ -9,9 +9,9 @@
     }
 
     var POOL = [
-        'img/athens/athens_vldb_22.webp',
-        'img/athens/athens_vldb_updated_5.webp',
-        'img/athens/athens_vldb_3.webp'
+        'img/morocco/morocco_arches.webp',
+        'img/morocco/morocco_rabat_hassan_tower.webp',
+        'img/morocco/morocco_kasbah.webp'
     ];
 
     var ROTATE_MS = 5000;
@@ -33,7 +33,7 @@
         var img = new Image();
         img.onload = function () {
             this.onerror = this.onabort = this.onload = null;
-            preLoaded.push({ i: url, t: 'Athens' });
+            preLoaded.push({ i: url, t: 'Morocco' });
             loadNext();
         };
         img.onerror = img.onabort = function () {
